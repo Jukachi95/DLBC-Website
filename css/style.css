@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap");
+* {
+  margin: 0;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  font-family: 'IBM Plex Sans'; }
+
+html {
+  scroll-behavior: smooth; }
+
+#showcase-header {
+  background-image: url(/img/Bible-2.jpg);
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom right; }
+  #showcase-header #logo-box {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 0;
+    right: 0; }
+  #showcase-header .nav-list-selection {
+    position: relative;
+    display: flex;
+    list-style-type: none;
+    font-size: 0.5rem;
+    justify-content: flex-end; }
+    #showcase-header .nav-list-selection a {
+      text-decoration: none; }
+
+#about-us {
+  background-color: #f8f8f8; }
+  #about-us .about-us-title {
+    margin: 2rem;
+    text-align: center;
+    color: #9c9a9a; }
+  #about-us .about-us-pastor {
+    display: flex;
+    justify-content: center;
+    text-align: center; }
+    #about-us .about-us-pastor span {
+      background-color: #d3d3d3;
+      border-radius: 0.3rem;
+      color: #4e4e4e; }
+    #about-us .about-us-pastor p {
+      font-size: 0.7rem; }
+  #about-us img {
+    border-radius: 100px; }
+
+#replay-service {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); }
+  #replay-service img {
+    width: 100%;
+    display: block;
+    height: auto; }
+  #replay-service i {
+    font-size: 0.6rem;
+    padding: 0.3rem; }
+  #replay-service .icon-weekly {
+    display: flex;
+    justify-content: center; }
+    #replay-service .icon-weekly p {
+      font-size: 0.6rem;
+      display: inline; }
+  #replay-service .--replay-service-title {
+    font-size: 0.5rem;
+    text-align: center; }
+    #replay-service .--replay-service-title a {
+      text-decoration: none; }
+    #replay-service .--replay-service-title .new-line {
+      display: block;
+      text-align: center; }
+  #replay-service .icon-calendar {
+    display: flex;
+    justify-content: center; }
+  #replay-service .--gathering-title {
+    text-align: center;
+    display: inline;
+    font-size: 0.6rem;
+    font-weight: 700; }
+  #replay-service .icon-contact {
+    display: flex;
+    justify-content: center; }
+  #replay-service .--contact-us-title {
+    display: inline;
+    font-size: 0.6rem;
+    text-align: center; }
+  #replay-service .--contact-us-text {
+    font-size: 0.5rem;
+    text-align: center; }

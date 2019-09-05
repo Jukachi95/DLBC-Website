@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0.5rem;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+// Colors
+
+$main-primary: #fff;
+$light-blue: #ADD8E6;
+
+// Font sizes
+
+$f-base: 1rem;
+$f-minus-base: 0.7rem;
+$f-half-base: 1.5rem;
+$f2: 2rem;
+$f3: 3rerm;
+
+
+
+
+#showcase-header{
+    background-image: url(/img/Bible-2.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: bottom right;
+
+        // Logo box
+
+        #logo-box{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            bottom:0;
+            right:0;
+        }
+
+        // Navbar
+
+        .nav-list-selection{
+            position: relative;
+           display: flex;
+           list-style-type: none;
+           font-size: 0.5rem;
+            justify-content: flex-end;
+
+                a{
+                    text-decoration: none;
+                }
+
+        }
+
+}
+
+// About Us
+
+#about-us{
+    background-color: #f8f8f8;
+   
+
+
+    .about-us-title{
+        margin: $f2;
+        text-align: center;
+        color: #9c9a9a;
+    }
+
+    .about-us-pastor{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        
+            span{
+                background-color: #d3d3d3;
+                border-radius: 0.3rem;
+                color: #4e4e4e;
+            }
+
+            p{
+                font-size: $f-minus-base;
+            }
+
+        
+
+    }
+
+
+    img{
+        border-radius: 100px;
+    }
+}
+
+
+// Replay Service
+
+#replay-service{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    
+
+    img{
+        width: 100%;
+        display: block;
+        height: auto;
+    }
+
+    i{
+        font-size: 0.6rem;
+        padding: 0.3rem;
+    }
+
+    .icon-weekly{
+        display: flex;
+        justify-content: center;
+        
+
+        p{
+            font-size: 0.6rem;
+            display: inline;
+        }
+
+    }
+
+
+    .--replay-service-title{
+        font-size: 0.5rem;
+        text-align: center;
+
+        a{
+            text-decoration: none;
+        }
+
+        .new-line{
+            display: block;
+            text-align: center;
+        }
+
+    }
+
+   .icon-calendar{
+      display: flex;
+      justify-content: center;
+   }
+
+    .--gathering-title{
+            text-align: center;
+            display: inline;
+            font-size: 0.6rem;   
+            font-weight: 700;
+    }
+
+
+    .icon-contact{
+        display: flex;
+        justify-content: center;
+    }
+
+    .--contact-us-title{
+        display: inline;
+        font-size: 0.6rem;
+        text-align: center;
+    }
+
+    .--contact-us-text{
+        font-size: 0.5rem;
+        text-align: center;
+    }
+
+}

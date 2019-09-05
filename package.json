@@ -1,0 +1,14 @@
+{
+  "name": "deeperlife",
+  "version": "1.0.0",
+  "description": "Deeper Life landing page",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Joel Okoro",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}
