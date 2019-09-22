@@ -66,7 +66,8 @@ html {
       display: inline; }
   #replay-service .--replay-service-title {
     font-size: 0.5rem;
-    text-align: center; }
+    text-align: center;
+    background-color: #e6e1e1; }
     #replay-service .--replay-service-title a {
       text-decoration: none; }
     #replay-service .--replay-service-title .new-line {
@@ -89,4 +90,42 @@ html {
     text-align: center; }
   #replay-service .--contact-us-text {
     font-size: 0.5rem;
-    text-align: center; }
+    text-align: center;
+    background-color: #e6e1e1; }
+
+#our-schedule {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); }
+  #our-schedule div img {
+    width: 100%;
+    display: block;
+    height: auto; }
+  #our-schedule div i {
+    font-size: 0.6rem; }
+  #our-schedule .icon-bible {
+    display: flex;
+    justify-content: center; }
+    #our-schedule .icon-bible p {
+      display: inline; }
+  #our-schedule .icon-prayer-meeting {
+    display: flex;
+    justify-content: center; }
+    #our-schedule .icon-prayer-meeting p {
+      display: inline; }
+  #our-schedule .icon-sunday-service {
+    display: flex;
+    justify-content: center; }
+    #our-schedule .icon-sunday-service p {
+      display: inline; }
+  #our-schedule .--bible-study-text {
+    font-size: 0.5rem;
+    text-align: center;
+    background-color: #e6e1e1; }
+  #our-schedule .--prayer-meeting-text {
+    font-size: 0.5rem;
+    text-align: center;
+    background-color: #e6e1e1; }
+  #our-schedule .--sunday-service-text {
+    font-size: 0.5rem;
+    text-align: center;
+    background-color: #e6e1e1; }
