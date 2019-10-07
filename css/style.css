@@ -8,6 +8,9 @@
 html {
   scroll-behavior: smooth; }
 
+#main-site {
+  padding: 0.5rem; }
+
 #showcase-header {
   background-image: url(/img/Bible-2.jpg);
   height: 90vh;
@@ -17,24 +20,29 @@ html {
   #showcase-header #logo-box {
     position: absolute;
     top: 10px;
-    left: 10px;
+    left: 20px;
     bottom: 0;
     right: 0; }
   #showcase-header .nav-list-selection {
     position: relative;
     display: flex;
     list-style-type: none;
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     justify-content: flex-end; }
     #showcase-header .nav-list-selection a {
-      text-decoration: none; }
+      text-decoration: none;
+      color: black; }
+      #showcase-header .nav-list-selection a:hover {
+        color: white;
+        transition: all 0.7s; }
 
 #about-us {
   background-color: #f8f8f8; }
   #about-us .about-us-title {
     margin: 2rem;
     text-align: center;
-    color: #9c9a9a; }
+    color: #9c9a9a;
+    font-size: 2rem; }
   #about-us .about-us-pastor {
     display: flex;
     justify-content: center;
@@ -43,6 +51,8 @@ html {
       background-color: #d3d3d3;
       border-radius: 0.3rem;
       color: #4e4e4e; }
+      #about-us .about-us-pastor span .about-us-pastor-inner {
+        font-size: 1.1rem; }
     #about-us .about-us-pastor p {
       font-size: 0.7rem; }
   #about-us img {
@@ -56,18 +66,18 @@ html {
     display: block;
     height: auto; }
   #replay-service i {
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     padding: 0.3rem; }
   #replay-service .icon-weekly {
     display: flex;
     justify-content: center; }
     #replay-service .icon-weekly p {
-      font-size: 0.6rem;
+      font-size: 0.9rem;
       display: inline; }
   #replay-service .--replay-service-title {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     text-align: center;
-    background-color: #e6e1e1; }
+    background-color: #faf8f8; }
     #replay-service .--replay-service-title a {
       text-decoration: none; }
     #replay-service .--replay-service-title .new-line {
@@ -79,19 +89,25 @@ html {
   #replay-service .--gathering-title {
     text-align: center;
     display: inline;
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     font-weight: 700; }
+  #replay-service .--gathering-text {
+    font-size: 0.9rem;
+    background-color: #faf8f8;
+    text-align: center; }
   #replay-service .icon-contact {
     display: flex;
     justify-content: center; }
   #replay-service .--contact-us-title {
     display: inline;
-    font-size: 0.6rem;
+    font-size: 0.9rem;
     text-align: center; }
   #replay-service .--contact-us-text {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     text-align: center;
-    background-color: #e6e1e1; }
+    background-color: #faf8f8; }
+    #replay-service .--contact-us-text .--contact-us-text-email {
+      display: inline-block; }
 
 #our-schedule {
   display: grid;
@@ -101,7 +117,7 @@ html {
     display: block;
     height: auto; }
   #our-schedule div i {
-    font-size: 0.6rem; }
+    font-size: 0.9rem; }
   #our-schedule .icon-bible {
     display: flex;
     justify-content: center; }
@@ -118,14 +134,67 @@ html {
     #our-schedule .icon-sunday-service p {
       display: inline; }
   #our-schedule .--bible-study-text {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     text-align: center;
-    background-color: #e6e1e1; }
+    background-color: #faf8f8; }
   #our-schedule .--prayer-meeting-text {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     text-align: center;
-    background-color: #e6e1e1; }
+    background-color: #faf8f8; }
   #our-schedule .--sunday-service-text {
-    font-size: 0.5rem;
+    font-size: 0.9rem;
     text-align: center;
-    background-color: #e6e1e1; }
+    background-color: #faf8f8; }
+
+#our-location {
+  background-color: #f8f8f8; }
+  #our-location .find-us-header {
+    display: flex;
+    justify-content: center; }
+  #our-location .deeper-life-location {
+    display: flex;
+    justify-content: center; }
+    #our-location .deeper-life-location img {
+      display: block;
+      max-width: 100%;
+      height: auto; }
+  #our-location .deeper-life-location-text {
+    font-size: 1rem;
+    background-color: #eeeeee;
+    max-width: 960px;
+    margin: 0 auto; }
+    #our-location .deeper-life-location-text p {
+      display: flex;
+      flex-direction: column;
+      text-align: center; }
+      #our-location .deeper-life-location-text p .deeper-life-location-main {
+        font-weight: 700; }
+      #our-location .deeper-life-location-text p .deeper-life-location-subheading {
+        font-style: italic; }
+  #our-location .location-icons {
+    display: flex; }
+    #our-location .location-icons div {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      text-align: center; }
+
+footer .deeper-life-footer {
+  background-color: #f5f5f5;
+  text-align: center;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+@media (max-width: 530px) {
+  #showcase-header #logo-box {
+    display: none; } }
+
+@media (max-width: 700px) {
+  #replay-service {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); }
+  #our-schedule {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); } }

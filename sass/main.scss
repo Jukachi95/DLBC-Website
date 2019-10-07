@@ -24,6 +24,10 @@ $f-half-base: 1.5rem;
 $f2: 2rem;
 $f3: 3rerm;
 
+#main-site{
+    padding: 0.5rem;
+}
+
 
 
 
@@ -39,7 +43,7 @@ $f3: 3rerm;
         #logo-box{
             position: absolute;
             top: 10px;
-            left: 10px;
+            left: 20px;
             bottom:0;
             right:0;
         }
@@ -50,11 +54,18 @@ $f3: 3rerm;
             position: relative;
            display: flex;
            list-style-type: none;
-           font-size: 0.5rem;
+           font-size: 0.9rem;
             justify-content: flex-end;
 
                 a{
                     text-decoration: none;
+                    color: black;
+
+                        &:hover{
+                            color: white;
+                            transition: all 0.7s;
+                        }
+
                 }
 
         }
@@ -72,6 +83,7 @@ $f3: 3rerm;
         margin: $f2;
         text-align: center;
         color: #9c9a9a;
+        font-size: $f2;
     }
 
     .about-us-pastor{
@@ -83,6 +95,10 @@ $f3: 3rerm;
                 background-color: #d3d3d3;
                 border-radius: 0.3rem;
                 color: #4e4e4e;
+                
+                .about-us-pastor-inner{
+                    font-size: 1.1rem;
+                }
             }
 
             p{
@@ -118,8 +134,10 @@ $f3: 3rerm;
     }
 
     i{
-        font-size: 0.6rem;
+        font-size: 0.9rem;
         padding: 0.3rem;
+
+            
     }
 
     .icon-weekly{
@@ -128,7 +146,7 @@ $f3: 3rerm;
         
 
         p{
-            font-size: 0.6rem;
+            font-size: 0.9rem;
             display: inline;
         }
 
@@ -136,9 +154,9 @@ $f3: 3rerm;
 
 
     .--replay-service-title{
-        font-size: 0.5rem;
+        font-size: 0.9rem;
         text-align: center;
-        background-color: #e6e1e1;
+        background-color: #faf8f8;
         
         a{
             text-decoration: none;
@@ -154,13 +172,21 @@ $f3: 3rerm;
    .icon-calendar{
       display: flex;
       justify-content: center;
+      
    }
 
     .--gathering-title{
             text-align: center;
             display: inline;
-            font-size: 0.6rem;   
+            font-size: 0.9rem;   
             font-weight: 700;
+            
+    }
+
+    .--gathering-text{
+        font-size: 0.9rem;
+        background-color: #faf8f8;
+        text-align: center;
     }
 
 
@@ -171,14 +197,18 @@ $f3: 3rerm;
 
     .--contact-us-title{
         display: inline;
-        font-size: 0.6rem;
+        font-size: 0.9rem;
         text-align: center;
     }
 
     .--contact-us-text{
-        font-size: 0.5rem;
+        font-size: 0.9rem;
         text-align: center;
-        background-color: #e6e1e1;
+        background-color: #faf8f8;
+
+            .--contact-us-text-email{
+                display: inline-block;
+            }
     }
 
 }
@@ -196,7 +226,7 @@ $f3: 3rerm;
         }
 
         i{
-            font-size: 0.6rem;
+            font-size: 0.9rem;
         }
 
        
@@ -231,20 +261,141 @@ $f3: 3rerm;
     }
 
     .--bible-study-text{
-        font-size: 0.5rem;
+        font-size: 0.9rem;
         text-align: center;
-        background-color: #e6e1e1;
+        background-color: #faf8f8;
     }
 
     .--prayer-meeting-text{
-        font-size: 0.5rem;
+        font-size: 0.9rem;
         text-align: center;
-        background-color: #e6e1e1;
+        background-color: #faf8f8;
     }
 
     .--sunday-service-text{
-        font-size: 0.5rem;
+        font-size: 0.9rem;
         text-align: center;
-        background-color: #e6e1e1;
+        background-color: #faf8f8;
     }
+}
+
+
+
+
+// Our Location
+
+#our-location{
+
+    background-color: #f8f8f8;
+
+            .find-us-header{
+                display: flex;
+                justify-content: center;
+            }
+
+                    .deeper-life-location{
+                        display: flex;
+                        justify-content: center;
+
+                        img{
+                            display: block;
+                            max-width: 100%;
+                            height: auto;
+                        }
+                    }
+
+                            .deeper-life-location-text{
+                                font-size: 1rem;
+                                background-color: #eeeeee;
+                                max-width: 960px;
+                                margin: 0 auto;
+                                    p{
+                                        // If this method is too messy, format the location text using the span classes as block elements and styling them
+                                        display: flex;
+                                        flex-direction: column;
+                                        text-align: center;
+
+                                            .deeper-life-location-main{
+                                                font-weight: 700;
+                                            }
+
+                                            .deeper-life-location-subheading{
+                                                font-style: italic;
+                                            }
+
+                                    }
+
+
+                            }
+
+
+                                    .location-icons{
+                                        display: flex;
+                                       
+                                            div{
+                                                display: flex;
+                                                flex-direction: column;
+                                                flex: 1;
+                                                text-align: center;
+                                            }
+                                    }
+
+}
+
+// Footer
+
+footer{
+
+       
+
+    .deeper-life-footer{
+        background-color: #f5f5f5;
+       text-align: center;
+       position: sticky;
+       bottom:0; 
+       left:0;
+       right:0;
+    }
+
+}
+
+// Media Queries
+@media(max-width:530px){
+
+    #showcase-header{
+   
+            // Logo box
+    
+            #logo-box{
+               display: none;
+            }
+
+
+
+}
+}
+
+@media(max-width: 700px){
+
+
+    #replay-service{
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+        // .--contact-us-text{
+        //    color:red;
+        // }
+    }
+
+    #our-schedule{
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+        // .--contact-us-text{
+        //    color:red;
+        // }
+    }
+
 }
