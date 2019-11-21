@@ -76,14 +76,36 @@ $f3: 3rerm;
 
 #about-us{
     background-color: #f8f8f8;
-   
+   background-image: url('../img/community1.jpg');
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center;
+   height: 95vh;
+   position: relative;
+
+   .about-us-outer{
+       display: flex;
+       align-items: center;
+       flex-direction: column;
+       position: absolute;
+       top: 0;
+       left: 0;
+       background-color: rgba(0,0,0, 0.4);
+       height: 100%;
+   }
 
 
     .about-us-title{
         margin: $f2;
         text-align: center;
-        color: #9c9a9a;
+        color: white;
         font-size: $f2;
+    }
+
+    .about-us-text{
+        color: white;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
     }
 
     .about-us-pastor{
@@ -330,7 +352,10 @@ $f3: 3rerm;
 
 
                                     .location-icons{
-                                        display: flex;
+
+                                        display: grid;
+                                        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                                      
                                        
                                             div{
                                                 display: flex;
@@ -359,7 +384,39 @@ footer{
 
 }
 
-// Media Queries
+// Media Queries  
+
+@media only screen and(min-width: 322px) {
+
+    #main-site{
+
+        #showcase-header{
+
+                .nav-list-selection{
+                   
+                   display: flex;
+                   list-style-type: none;
+                   font-size: 0.9rem;
+                    justify-content: center;
+            
+                }
+        
+
+        }
+        
+
+    }
+
+   
+    
+
+
+}
+
+
+
+
+
 @media(max-width:530px){
 
     #showcase-header{

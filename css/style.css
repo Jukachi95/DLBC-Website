@@ -37,12 +37,31 @@ html {
         transition: all 0.7s; }
 
 #about-us {
-  background-color: #f8f8f8; }
+  background-color: #f8f8f8;
+  background-image: url("../img/community1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 95vh;
+  position: relative; }
+  #about-us .about-us-outer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100%; }
   #about-us .about-us-title {
     margin: 2rem;
     text-align: center;
-    color: #9c9a9a;
+    color: white;
     font-size: 2rem; }
+  #about-us .about-us-text {
+    color: white;
+    font-size: 1.3rem;
+    line-height: 1.8rem; }
   #about-us .about-us-pastor {
     display: flex;
     justify-content: center;
@@ -172,7 +191,8 @@ html {
       #our-location .deeper-life-location-text p .deeper-life-location-subheading {
         font-style: italic; }
   #our-location .location-icons {
-    display: flex; }
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
     #our-location .location-icons div {
       display: flex;
       flex-direction: column;
@@ -186,6 +206,13 @@ footer .deeper-life-footer {
   bottom: 0;
   left: 0;
   right: 0; }
+
+@media only screen and (min-width: 322px) {
+  #main-site #showcase-header .nav-list-selection {
+    display: flex;
+    list-style-type: none;
+    font-size: 0.9rem;
+    justify-content: center; } }
 
 @media (max-width: 530px) {
   #showcase-header #logo-box {
