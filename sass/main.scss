@@ -29,8 +29,6 @@ $f3: 3rerm;
 }
 
 
-
-
 #showcase-header{
     background-image: url(/img/Bible-2.jpg);
     height: 90vh;
@@ -52,9 +50,9 @@ $f3: 3rerm;
 
         .nav-list-selection{
             position: relative;
-           display: flex;
-           list-style-type: none;
-           font-size: 0.9rem;
+            display: flex;
+            list-style-type: none;
+            font-size: 0.9rem;
             justify-content: flex-end;
 
                 a{
@@ -126,19 +124,12 @@ $f3: 3rerm;
             p{
                 font-size: $f-minus-base;
             }
-
-        
-
     }
-
 
     img{
         border-radius: 100px;
     }
 }
-
-
-
 
 
 
@@ -158,8 +149,6 @@ $f3: 3rerm;
     i{
         font-size: 0.9rem;
         padding: 0.3rem;
-
-            
     }
 
     .icon-weekly{
@@ -302,12 +291,9 @@ $f3: 3rerm;
 }
 
 
-
-
 // Our Location
 
 #our-location{
-
     background-color: #f8f8f8;
 
             .find-us-header{
@@ -352,11 +338,9 @@ $f3: 3rerm;
 
 
                                     .location-icons{
-
                                         display: grid;
                                         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
                                       
-                                       
                                             div{
                                                 display: flex;
                                                 flex-direction: column;
@@ -370,9 +354,6 @@ $f3: 3rerm;
 // Footer
 
 footer{
-
-       
-
     .deeper-life-footer{
         background-color: #f5f5f5;
        text-align: center;
@@ -391,25 +372,15 @@ footer{
     #main-site{
 
         #showcase-header{
-
-                .nav-list-selection{
-                    
+               .nav-list-selection{
                    display: flex;
                    list-style-type: none;
                    font-size: 0.9rem;
                     justify-content: center;
-            
                 }
-        
-
         }
-        
 
     }
-
-   
-    
-
 
 }
 
@@ -427,8 +398,6 @@ footer{
                display: none;
             }
 
-
-
 }
 }
 
@@ -436,9 +405,7 @@ footer{
 
 @media(max-width: 700px){
 
-
     #replay-service{
-
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
@@ -448,7 +415,6 @@ footer{
     }
 
     #our-schedule{
-
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 
